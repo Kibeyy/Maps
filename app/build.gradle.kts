@@ -10,12 +10,14 @@ android {
 
     defaultConfig {
         applicationId = "com.example.maps"
-        minSdk = 24
-        targetSdk = 35
+        minSdk = 23
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        
+
     }
 
     buildTypes {
@@ -56,4 +58,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    //maps
+    implementation(libs.maps.compose)
+    implementation(libs.play.services.maps)
+    implementation(libs.gms.play.services.maps)
+
 }
